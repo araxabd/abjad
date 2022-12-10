@@ -1,0 +1,64 @@
+:root {
+    --color-1: #425F57;
+    --color-2: #749F82;
+    --color-3: #A8E890;
+    --color-4: #CFFF8D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: var(--color-1);
+    text-align: center;
+    direction: rtl;
+}
+
+#content {
+    width: 50vw;
+    margin: 25vh auto;
+}
+
+#content > input#uin {
+    background: var(--color-4);
+    width: 40vw;
+    /* color: var(--color-2); */
+    padding: 1rem;
+    font-size: 1rem;
+    direction: rtl;
+}
+
+h1#out {
+    color: var(--color-4);
+    font-size: 3rem;
+}
+
+button#btn {
+    background: var(--color-3);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #content {
+        width: 90vw;
+    }
+    #content > input#uin {
+        width: 80vw;
+    }
+    button#btn {
+        width: 87.5vw;
+    }
+}
